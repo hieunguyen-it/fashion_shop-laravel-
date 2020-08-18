@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         $this->call(values_product::class);
         $this->call(variant::class);
         $this->call(variant_values::class);
+        $this->call(MembersTablesSeeder::class);
     }
 }

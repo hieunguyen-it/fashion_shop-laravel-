@@ -11,6 +11,11 @@
 |
 */
 //frontend
+Route::group(['prefix' => 'login_member'], function () {
+
+    Route::get('','frontend\MainController@GetLoginMember')->middleware('CheckLogoutMember');
+    Route::post('','frontend\MainController@PostLoginMember');
+});
 Route::get('','frontend\HomeController@GetHome');
 Route::get('contact','frontend\HomeController@GetContact');
 Route::get('about','frontend\HomeController@GetAbout');

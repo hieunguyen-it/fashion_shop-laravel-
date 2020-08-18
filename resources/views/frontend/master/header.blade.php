@@ -22,6 +22,8 @@
                             <li><a href="about">Giới thiệu</a></li>
                             <li><a href="contact">Liên hệ</a></li>
                             <li><a href="product/cart"><i class="icon-shopping-cart"></i> Giỏ hàng [{{Cart::Content()->count()}}]</a></li>
+                            <li><a href="login_member">Đăng nhập </a></li>
+                            <li><a href="contact">Đăng ký</a></li>
                         </ul>
                     </div>
                 </div>

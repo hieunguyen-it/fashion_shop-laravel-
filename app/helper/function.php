@@ -12,9 +12,7 @@ function GetCategory($mang,$parent,$shift,$active)
         else {
             echo "<option value='$row->id'>".$shift.$row->name."</option>";
         }
-		
 		GetCategory($mang,$row->id,$shift.'---|',$active);
-		
 	}
  }
 }
@@ -32,7 +30,6 @@ function ShowCategory($mang,$parent,$shift)
         </div>
     </div>";
 		ShowCategory($mang,$row->id,$shift.'---|');
-		
 	}
  }
 }
@@ -75,7 +72,6 @@ function check_value($product,$value_check)
 		}
 	}
 	return false;
-
 }
 // kiểm tra biến thể
 function check_var($product,$array)
