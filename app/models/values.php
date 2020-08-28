@@ -15,6 +15,6 @@ class values extends Model
 
     public function product()
     {
-        return $this->belongsToMany('App\model\product', 'values_product', 'values_id', 'product_id');
+        return $this->belongsToMany('App\models\product', 'values_product', 'values_id', 'product_id');
     }
 }

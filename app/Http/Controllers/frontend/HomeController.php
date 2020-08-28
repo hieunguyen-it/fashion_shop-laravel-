@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function GetContact()
     {
-        return view('frontend.contact');
+        return view('frontend.contact', ['a'=>'abc']);
     }
 
     public function GetAbout()

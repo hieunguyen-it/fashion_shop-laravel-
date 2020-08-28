@@ -21,7 +21,6 @@ class CategoryController extends Controller
     $cate->parent=$request->parent;
     $cate->save();
     return redirect()->back()->with('thongbao','Đã thêm thành công!');
-
    }
 
    public function EditCategory($id)
